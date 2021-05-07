@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Homepage() {
+const Homepage=()=> {
   return (
    <div></div>
   );
