@@ -1,0 +1,35 @@
+.main-container{
+ height: 100vh;
+ /* background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg"); */
+ background-size:cover;
+ background-repeat: no-repeat;
+ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+}
+
+.header-main-container{
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.netflix-logo{
+  background-image: url("https://raw.githubusercontent.com/Rahul-Vijay/Netflix-clone/main/images/netflix-logo.png");
+  height: 100px;
+  background-size: cover;
+  width: 180px;
+  background-repeat: no-repeat;
+}
+
+.signinbutton-container{
+  padding-top: 35px;
+  padding-right: 44px;
+}
+.signin-button{ 
+  background-color: #e50914;
+  padding: 8px 18px;
+  font-weight: 400;
+  border-radius: 5px;}
+
+a { color: white;
+  text-decoration: none;
+ }
