@@ -94,9 +94,16 @@ a { color: white;
 }
 
 .card-image{
-  height: 250px;
-  width: 300px;
+  height: 300px;
+  width: 399px;
   background-size:cover;
   background-repeat: no-repeat;
   background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg");
+}
+.card-image1{
+  height: 300px;
+  width: 399px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-image: url("https://occ-0-4610-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf");
 }

@@ -6,7 +6,6 @@ const Homepage = () => {
 
             <div className="main-container">
                 <Header />
-
                 <div className="child-container" >
                     <div style={{ display: "flex", flexDirection: "column", textAlign: "center" }}>
                         <span className="content1">Unlimited movies, TV </span>
@@ -15,12 +14,11 @@ const Homepage = () => {
                         <span className="content3">Ready to watch? Enter your email to create or restart your membership.</span>
                     </div><br />
                     <div style={{ display: "flex", justifyContent: "center", top: "50%" }}>
-                        <input type="text" className="email-text" />
+                        <input type="text" className="email-text" placeholder="Enter address"/>
                         <a href="www.google.com" className="get-started-button">Get Started </a>
                     </div>
                 </div>
             </div>
-
             <div className="child-card-container" >
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
                     <span className="content1">Enjoy on your TV.</span>
@@ -31,30 +29,29 @@ const Homepage = () => {
                 <span className="card-image"></span>
             </div>
             <div className="child-card-container" >
-                <span className="card-image"></span>
+                <span className="card-image1"></span>
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
                     <span className="content1">Download your shows</span>
-                    <span className="content2">to watch offline.</span>
+                    <span className="content1">to watch offline.</span>
                     <span className="content2">save your favourites easily and always have</span>
                     <span className="content2">something to watch.</span>
                 </div>
             </div>
             <div className="child-card-container" >
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
-                    <span className="content1">Enjoy on your TV.</span>
-                    <span className="content2">Watch on smart TVs, PlayStation, Xbox,</span>
-                    <span className="content2">Chromecast, Apple TV, Blu-ray players and</span>
-                    <span className="content2">and more.</span>
+                    <span className="content1">Watch everywhere.</span>
+                    <span className="content2">Stream unlimited movies and TV shows on</span>
+                    <span className="content2">your phone, tablet, laptop, and TV.</span>
                 </div>
                 <span className="card-image"></span>
             </div>
             <div className="child-card-container" >
-                <span className="card-image"></span>
+                <span className="card-image1"></span>
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
-                    <span className="content1">Download your shows</span>
-                    <span className="content2">to watch offline.</span>
-                    <span className="content2">save your favourites easily and always have</span>
-                    <span className="content2">something to watch.</span>
+                    <span className="content1">Create profiles for kids.</span>
+                    <span className="content2">Send kids on adventures with their favourite</span>
+                    <span className="content2">characters in a space made just for them—</span>
+                    <span className="content2">free with your membership.</span>
                 </div>
             </div>
         </div>
