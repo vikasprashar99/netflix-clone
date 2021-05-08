@@ -28,8 +28,42 @@
   background-color: #e50914;
   padding: 8px 18px;
   font-weight: 400;
-  border-radius: 5px;}
+  border-radius: 5px;
+}
 
 a { color: white;
   text-decoration: none;
+ }
+
+ .sub-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ }
+ .content1{
+   color: white;
+   font-weight: 600;
+   font-size: 4em;
+ }
+ .content2{
+   color: white;
+   font-size: 1.5em;
+   font-weight: 400;
+ }
+ .content3{
+   color: white;
+   font-weight: 400;
+   font-size: 1.2em;
+ }
+ .get-started-button{
+  background-color: #e50914;
+  padding: 25px 70px;
+  font-weight: 400;
+  font-size: 1.5em;
+
+ }
+
+ .email-text{
+  padding:25px 170px;
+
  }
