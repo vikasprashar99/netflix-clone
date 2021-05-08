@@ -1,5 +1,4 @@
 .main-container{
- height: 100vh;
  background-size:cover;
  background-repeat: no-repeat;
  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/8ed3a98a-e2c2-488d-9583-93634199485d/IN-en-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg');
@@ -34,11 +33,21 @@ a { color: white;
   text-decoration: none;
  }
 
+ .child-container{
+  height: 100vh;
+  align-items: center ;
+  align-self: center;
+}
+
+
  .sub-container{
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
  }
+
+
  .content1{
    color: white;
    font-weight: 600;
@@ -47,7 +56,7 @@ a { color: white;
  .content2{
    color: white;
    font-size: 1.5em;
-   font-weight: 400;
+   font-weight: 500;
  }
  .content3{
    color: white;
@@ -56,7 +65,7 @@ a { color: white;
  }
  .get-started-button{
   background-color: #e50914;
-  padding: 25px 70px;
+  padding: 20px 70px;
   font-weight: 400;
   font-size: 1.5em;
 
@@ -66,3 +75,23 @@ a { color: white;
   padding:25px 170px;
 
  }
+
+
+.child-card-container{
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  background: black;
+  justify-content: space-evenly;
+  border-top:8px solid dimgray;
+  border-bottom:8px solid dimgray;
+
+}
+
+.card-image{
+  height: 250px;
+  width: 300px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg");
+}
