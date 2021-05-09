@@ -92,13 +92,17 @@ class Homepage extends Component {
                                     There's always something new to discover, and new TV shows and movies are added every week!
                                 </div>
                             ) : null}
-                        </div><br/><br/>
+                        </div><br /><br />
                         <span className="content3">Ready to watch? Enter your email to create or restart your membership.</span><br />
                         <div style={{ display: "flex", justifyContent: "center", top: "50%" }}>
                             <input type="text" className="email-text" placeholder="Enter address" />
                             <a href="www.google.com" className="get-started-button">Get Started </a>
                         </div>
                     </div>
+                </div>
+                {/* Footer */}
+                <div className="footer-container">
+
                 </div>
             </div>
         );

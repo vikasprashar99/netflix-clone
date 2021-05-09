@@ -116,7 +116,7 @@ a { color: white;
   background: black;
   justify-content: space-evenly;
   border-top:8px solid dimgray;
-  border-bottom:0.5px solid dimgray;
+  border-bottom:8px solid dimgray;
 }
 
 
@@ -140,4 +140,11 @@ a { color: white;
   font-family: verdana;
   font-size: 14px;
   color: white;
+  }
+
+  .footer-container{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    background: black;
   }
