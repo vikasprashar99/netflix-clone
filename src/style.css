@@ -67,6 +67,7 @@ a { color: white;
    color: white;
    font-weight: 400;
    font-size: 1.2em;
+   text-align: center;
  }
  .get-started-button{
   background-color: #e50914;
@@ -107,3 +108,36 @@ a { color: white;
   background-repeat: no-repeat;
   background-image: url("https://occ-0-4610-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf");
 }
+
+.faq-container{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  background: black;
+  justify-content: space-evenly;
+  border-top:8px solid dimgray;
+  border-bottom:0.5px solid dimgray;
+}
+
+
+/* expansion panel  */
+.header{
+  cursor: pointer;
+  border: solid 1px #f2f2f2;
+  padding: 15px;
+  background-color: grey;
+  color: #FFF;
+  font-family: verdana;
+  margin-bottom: 10px;
+  }
+  .content{
+  cursor: pointer;
+  border-left: solid 1px #f2f2f2;
+  border-right: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+  border-radius: 0 0 5px 5px;
+  padding: 15px;
+  font-family: verdana;
+  font-size: 14px;
+  color: white;
+  }
