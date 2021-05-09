@@ -18,8 +18,7 @@
   margin-bottom: -30px;
   width: 100%;
   margin: 2em auto;
-/* padding: 1em; */
-}
+  }
 
 .netflix-logo{
   background-image: url("https://raw.githubusercontent.com/Rahul-Vijay/Netflix-clone/main/images/netflix-logo.png");
@@ -144,7 +143,19 @@ a { color: white;
 
   .footer-container{
     display: flex;
+    flex-direction: column;
     height: 50vh;
     align-items: center;
     background: black;
-  }
+    justify-content: space-evenly;  }
+
+
+    .footer-line1{
+      color: white;
+    }
+
+    .footertext2-container{
+      display: flex;
+      flex-direction: row;
+
+    }

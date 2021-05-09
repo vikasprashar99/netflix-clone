@@ -8,13 +8,22 @@ class Homepage extends Component {
         super(props);
         // Don't do this!
         this.state = {
-            open: false
+            open: false,
+            faq: [
+                { heading: "something", content: "something" },
+                { heading: "something", content: "something" },
+                { heading: "something", content: "something" },
+                { heading: "something", content: "something" }
+            ],
+            content: ""
         };
         this.togglePanel = this.togglePanel.bind(this);
 
     }
-    togglePanel(e) {
+    togglePanel(e, x) {
+        console.log(typeof(x))
         this.setState({ open: !this.state.open })
+        this.setState({ content: x.content })
     }
     render() {
         return (
@@ -73,26 +82,17 @@ class Homepage extends Component {
                 <div className="faq-container">
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
                         <span className="content1">Frequently Asked Questions</span><br /><br />
-                        <div >
-                            <div onClick={(e) => this.togglePanel(e)} className="header">
-                                <span className="content2">What is Netflix?</span></div>
-                            <div onClick={(e) => this.togglePanel(e)} className="header">
-                                <span className="content2">What is Netflix?</span></div>
-                            <div onClick={(e) => this.togglePanel(e)} className="header">
-                                <span className="content2">What is Netflix?</span></div>
-                            <div onClick={(e) => this.togglePanel(e)} className="header">
-                                <span className="content2">What is Netflix?</span></div>
-                            {this.state.open ? (
-                                <div className="content">
-                                    Netflix is a streaming service that offers a wide variety of
-                                    award-winning TV shows, movies, anime,
-                                    documentaries and more – on thousands of internet-connected devices.
-                                    You can watch as much as you want, whenever you want, without a
-                                    single ad – all for one low monthly price.
-                                    There's always something new to discover, and new TV shows and movies are added every week!
-                                </div>
-                            ) : null}
-                        </div><br /><br />
+                        {this.state.faq.map((x) => {
+                            return (
+                                <div onClick={(e) => this.togglePanel(e, x)} className="header">
+                                    <span className="content2">{x.heading}</span></div>
+                            )
+                        })}
+                        {this.state.open ? (
+                            <div className="content">
+                                {this.state.content}
+                            </div>
+                        ) : null}
                         <span className="content3">Ready to watch? Enter your email to create or restart your membership.</span><br />
                         <div style={{ display: "flex", justifyContent: "center", top: "50%" }}>
                             <input type="text" className="email-text" placeholder="Enter address" />
@@ -101,8 +101,18 @@ class Homepage extends Component {
                     </div>
                 </div>
                 {/* Footer */}
-                <div className="footer-container">
+                <div className="footer-container" >
+                    <div className="footertext1-container">
+                        <span className="footer-line1">Questions? Call 000-800-040-1843</span>
+                    </div>
+                    <div className="footertext2-container">
+                        <span className="footertext2-subcontainer">Questions? Call 000-800-040-1843</span>
+                        <span className="footertext2-subcontainer">Questions? Call 000-800-040-1843</span>
 
+                    </div>
+                    <div className="footertext3-container">
+                        <span className="footer-line1">Questions? Call 000-800-040-1843</span>
+                    </div>
                 </div>
             </div>
         );
