@@ -10,10 +10,10 @@ class Homepage extends Component {
         this.state = {
             open: false,
             faq: [
-                { heading: "something", content: "something" },
-                { heading: "something", content: "something" },
-                { heading: "something", content: "something" },
-                { heading: "something", content: "something" }
+                { heading: "What is Netflix?", content: "something" },
+                { heading: "What is Netflix?1", content: "something" },
+                { heading: "What is Netflix?2", content: "something" },
+                { heading: "What is Netflix?3", content: "something" }
             ],
             content: ""
         };
@@ -21,7 +21,6 @@ class Homepage extends Component {
 
     }
     togglePanel(e, x) {
-        console.log(typeof(x))
         this.setState({ open: !this.state.open })
         this.setState({ content: x.content })
     }
@@ -38,7 +37,7 @@ class Homepage extends Component {
                             <span className="content2">Watch anywhere. Cancel anytime.</span><br />
                             <span className="content3">Ready to watch? Enter your email to create or restart your membership.</span>
                         </div><br />
-                        <div style={{ display: "flex", justifyContent: "center", top: "50%" }}>
+                        <div className="email-container">
                             <input type="text" className="email-text" placeholder="Enter address" />
                             <a href="www.google.com" className="get-started-button">Get Started </a>
                         </div>
@@ -75,7 +74,7 @@ class Homepage extends Component {
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
                         <span className="content1">Create profiles for kids.</span>
                         <span className="content2">Send kids on adventures with their favourite</span>
-                        <span className="content2">characters in a space made just for them—</span>
+                        <span className="content2">characters i n a space made just for them—</span>
                         <span className="content2">free with your membership.</span>
                     </div>
                 </div>
@@ -84,7 +83,7 @@ class Homepage extends Component {
                         <span className="content1">Frequently Asked Questions</span><br /><br />
                         {this.state.faq.map((x) => {
                             return (
-                                <div onClick={(e) => this.togglePanel(e, x)} className="header">
+                                <div onClick={(e) => this.togglePanel(e, x)} className="header" key={x.heading}>
                                     <span className="content2">{x.heading}</span></div>
                             )
                         })}
@@ -92,9 +91,9 @@ class Homepage extends Component {
                             <div className="content">
                                 {this.state.content}
                             </div>
-                        ) : null}
+                        ) : null}<br /><br />
                         <span className="content3">Ready to watch? Enter your email to create or restart your membership.</span><br />
-                        <div style={{ display: "flex", justifyContent: "center", top: "50%" }}>
+                        <div className="email-container">
                             <input type="text" className="email-text" placeholder="Enter address" />
                             <a href="www.google.com" className="get-started-button">Get Started </a>
                         </div>
@@ -106,9 +105,18 @@ class Homepage extends Component {
                         <span className="footer-line1">Questions? Call 000-800-040-1843</span>
                     </div>
                     <div className="footertext2-container">
-                        <span className="footertext2-subcontainer">Questions? Call 000-800-040-1843</span>
-                        <span className="footertext2-subcontainer">Questions? Call 000-800-040-1843</span>
-
+                        <div className="footertext2-subcontainer1">
+                            <span>Questions? Call 000-800-040-1843</span>
+                            <span>Questions? Call 000-800-040-1843</span>
+                            <span>Questions? Call 000-800-040-1843</span>
+                            <span>Questions? Call 000-800-040-1843</span>
+                        </div>
+                        <div className="footertext2-subcontainer1">
+                            <span>Questions? Call 000-800-040-1843</span>
+                            <span>Questions? Call 000-800-040-1843</span>
+                            <span>Questions? Call 000-800-040-1843</span>
+                            <span>Questions? Call 000-800-040-1843</span>
+                        </div>
                     </div>
                     <div className="footertext3-container">
                         <span className="footer-line1">Questions? Call 000-800-040-1843</span>
