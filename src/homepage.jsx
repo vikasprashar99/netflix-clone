@@ -43,7 +43,7 @@ class Homepage extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="child-card-container" >
+                <div className="child-card-container" > 
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
                         <span className="content1">Enjoy on your TV.</span>
                         <span className="content2">Watch on smart TVs, PlayStation, Xbox,</span>
@@ -52,14 +52,14 @@ class Homepage extends Component {
                     </div>
                     <span className="card-image"></span>
                 </div>
-                <div className="child-card-container" >
-                    <span className="card-image1"></span>
+                <div className="child-card-container-2" >
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
                         <span className="content1">Download your shows</span>
                         <span className="content1">to watch offline.</span>
                         <span className="content2">save your favourites easily and always have</span>
                         <span className="content2">something to watch.</span>
                     </div>
+                    <span className="card-image1"></span>
                 </div>
                 <div className="child-card-container" >
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
@@ -69,14 +69,15 @@ class Homepage extends Component {
                     </div>
                     <span className="card-image"></span>
                 </div>
-                <div className="child-card-container" >
-                    <span className="card-image1"></span>
+                <div className="child-card-container-2" >
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
                         <span className="content1">Create profiles for kids.</span>
                         <span className="content2">Send kids on adventures with their favourite</span>
                         <span className="content2">characters i n a space made just for them—</span>
                         <span className="content2">free with your membership.</span>
                     </div>
+                    <span className="card-image1"></span>
+
                 </div>
                 <div className="faq-container">
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center center" }}>
